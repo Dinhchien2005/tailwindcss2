@@ -1,68 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TailwindCSS Tutorial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="output.css">
-</head>
-<!-- sm:640px
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <!-- sm:640px
 md:768px
 lg:1024px
 xl:1280px
 -->
-<body>
-<div class="pt-10">
-    <h1 class="         
-    text-center text-[#ffa400] text-lg
-    sm:text-2xl
-    md:text-3xl
-    lg:text-4xl
-    font-semibold
-    mb-5">Live anywhere</h1>
-    <h3 class="text-center font-light text-xl text-[#07a787] mb-35">Keep calm & travel on </h3>
-    <div class=" 
-    grid grid-cols-1
-    lg:grid-cols-3
-    gap-x-[37px]
-    max-w-6xl
-    mx-auto
-    px-[15px]
-    gap-y-7
-    lg:gap-y-0">
-    <div>
-        <div class=" h-96 mb-5 cursor-pointer">
-        <img src="https://images.pexels.com/photos/20734995/pexels-photo-20734995/free-photo-of-thanh-ph-k-ngh-d-ng-ph-toa-nha.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-        class="w-full h-full object-cover rounded-lg mb-3"
-        >
-        <h3 class="font-medium text-lg mb-3 text-center">Enjoy the great cold</h3>
-        <span class="block text-center text-gray-400">6,789 properties</span>
-        </div>
-    </div>
-        <div>
-            <div class=" h-96 mb-5 cursor-pointer">
-            <img src="https://images.pexels.com/photos/20451732/pexels-photo-20451732/free-photo-of-anh-sang-bi-n-binh-minh-phong-c-nh.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-            class="w-full h-full object-cover rounded-lg mb-3"
-            >
-            <h3 class="font-medium text-lg mb-3 text-center">Enjoy the great cold</h3>
-            <span class="block text-center text-gray-400">6,789 properties</span>
-            </div>
-        </div>
-        <div>
-            <div class=" h-96 mb-5 cursor-pointer">
-            <img src="https://images.pexels.com/photos/4558740/pexels-photo-4558740.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-            class="w-full h-full object-cover rounded-lg mb-3"
-            >
-            <h3 class="font-medium text-lg mb-3 text-center">Enjoy the great cold</h3>
-            <span class="block text-center text-gray-400">6,789 properties</span>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
 
+  <body>
+    <!-- <div class="pt-10">
+      <h1
+        class="text-center text-[#ffa400] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5"
+      >
+        Live anywhere
+      </h1>
+      <h3 class="text-center font-light text-xl text-gray-500 mb-35">
+        Keep calm & travel on
+      </h3>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-x-[37px] max-w-6xl mx-auto px-[15px] gap-y-7 lg:gap-y-0"
+      >
+        <div>
+          <div class="h-96 mb-5 cursor-pointer">
+            <img
+              src="https://images.pexels.com/photos/20734995/pexels-photo-20734995/free-photo-of-thanh-ph-k-ngh-d-ng-ph-toa-nha.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              class="w-full h-full object-cover rounded-lg mb-3"
+            />
+            <h3 class="font-medium text-lg mb-3 text-center">
+              Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400"
+              >6,789 properties</span
+            >
+          </div>
+        </div>
+        <div>
+          <div class="h-96 mb-5 cursor-pointer">
+            <img
+              src="https://images.pexels.com/photos/20451732/pexels-photo-20451732/free-photo-of-anh-sang-bi-n-binh-minh-phong-c-nh.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              class="w-full h-full object-cover rounded-lg mb-3"
+            />
+            <h3 class="font-medium text-lg mb-3 text-center">
+              Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400"
+              >6,789 properties</span
+            >
+          </div>
+        </div>
+        <div>
+          <div class="h-96 mb-5 cursor-pointer">
+            <img
+              src="https://images.pexels.com/photos/4558740/pexels-photo-4558740.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              class="w-full h-full object-cover rounded-lg mb-3"
+            />
+            <h3 class="font-medium text-lg mb-3 text-center">
+              Enjoy the great cold
+            </h3>
+            <span class="block text-center text-gray-400"
+              >6,789 properties</span
+            >
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="p-10 border border-red-300 group mb-3">
+      <button
+        class="inline-block lg:group-hover:bg-red-400 px-10 py-3 rounded-lg transition-colors text-white bg-[#9966ff] m-5"
+      >
+        Login
+      </button>
+    </div>
+    <input
+      type="text"
+      class="py-3 px-3 border border-[#ccc] outline-none rounded-xl m-3 focus:border-red-400 transition-all"
+    />
+    <!-- <div class="flex justify-center items-center h-screen bg-gray-100">
+      <button
+        class="py-2 px-6 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full focus:outline-none transform transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+        Click me
+      </button>
+    </div> -->
+    <div
+      before=""
+      class="w-10 h-10 flex justify-center items-center mx-auto my-5 text-[#00aefd] rounded-xl relative before:content-[attr(before)] before:absolute before:inset-0 before:rounded-xl before:bg-current before:opacity-25"
+    >
+      <ion-icon name="accessibility-outline"></ion-icon>
+    </div>
+  </body>
 </html>
