@@ -5,6 +5,7 @@ module.exports = {
     './dist/*.html',
      "./**/*.{js,jsx,ts,tsx,vue}",
   ],
+  darkMode:"class",
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
